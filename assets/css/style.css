@@ -1,18 +1,35 @@
+:root {
+    /* Paletas de cores */
+    --cor-preta-minimal: #212b38;
+    --cor-preta-fraca-minimal: #37465b;
+    --cor-azul-pouco-escuro-minimal: #08c6ab;
+    --cor-azul-claro-minimal: #5affe2;
+    --cor-roxo-minimal: #726eff;
+    --cor-preta-cinza: #29282c;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
-    background-color: rgb(5, 31, 40);
+    /*background-color: rgb(5, 31, 40);*/
+    background-color: var(--cor-preta-cinza);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo {
-    font-size: 50px;
-    margin-left: 250px;
-    padding-left: 400px;
-    position: absolute;
+    font-size: 40px;
 }
 
 .caixa {
@@ -24,6 +41,10 @@ body {
 }
 
 form{
+    width: 550px;
+    height: 450px;
+    border-radius: 50px;
+    background-color: var(--cor-roxo-minimal);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,15 +62,15 @@ input, span {
 
 .inputT{
     border-radius: 8px;
-    height: 25px;
-    width: 250px;
+    height: 30px;
+    width: 350px;
     color: black;
-    
+    font-size: 15px;
 }
 .inputT:hover{
     border-radius: 8px;
-    height: 27px;
-    width: 250px;
+    height: 30px;
+    width: 355px;
     color: black;
     background-color: whitesmoke;
 }
@@ -57,14 +78,14 @@ input, span {
 .Button{
     border-radius: 10px;
     color: black;
-    height: 40px;
-    width: 80px;
+    height: 50px;
+    width: 90px;
     margin: 10px;
     font-size: 15px;
 }
 
 .Button:hover{
-    background-color: greenyellow;
-    height: 45px;
-    width: 85px;
+    background-color: var(--cor-azul-pouco-escuro-minimal);
+    height: 50px;
+    width: 95px;
 }

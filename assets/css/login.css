@@ -1,0 +1,118 @@
+:root {
+    /* Paletas de cores */
+    --cor-preta-minimal: #212b38;
+    --cor-preta-fraca-minimal: #37465b;
+    --cor-azul-pouco-escuro-minimal: #08c6ab;
+    --cor-azul-claro-minimal: #5affe2;
+    --cor-roxo-minimal: #726eff;
+    --cor-preta-cinza: #29282c;
+
+    --fonte-roboto: 'Roboto Mono', monospace;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-roboto);
+}
+
+body {
+    /*background-color: rgb(5, 31, 40);*/
+    background-color: var(--cor-preta-cinza);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 40px;
+    border: 5px solid white;
+    border-radius: 15px;
+    padding: 8px 10px;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+form{
+    width: 550px;
+    height: 450px;
+    border-radius: 50px;
+    background-color: var(--cor-roxo-minimal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input, span {
+    color: white;
+}
+
+.t2 {
+    position: absolute;
+    font-size: 25px;
+}
+
+.inputT{
+    border-radius: 8px;
+    height: 30px;
+    width: 350px;
+    color: black;
+    font-size: 15px;
+}
+.inputT:hover{
+    border-radius: 8px;
+    height: 30px;
+    width: 355px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Button{
+    border-radius: 10px;
+    color: black;
+    height: 50px;
+    width: 90px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.Button:hover{
+    background-color: var(--cor-azul-pouco-escuro-minimal);
+    height: 50px;
+    width: 95px;
+}
+
+.bc,a {
+    border-radius: 10px;
+    color: black;
+    height: 50px;
+    width: 110px;
+    margin: 10px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.bc:hover {
+    background-color: var(--cor-azul-pouco-escuro-minimal);
+    height: 50px;
+    width: 115px;
+}

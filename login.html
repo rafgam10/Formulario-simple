@@ -2,38 +2,44 @@
 <html lang="pt-br">
 <head>
     <!-- Aqui fica links das Fontes -->
+
+    <!-- Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    
     <!-- Aqui Terminar links das Fontes -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 <body>
 
     <div class="container">
         <div class="caixa">
             <form>
-                <span class="titulo">Formulário Cadastro</span>
+                <span class="titulo">Login</span>
                 <br><br>
                 <div class="caixinha">
-                    <span class="t2">Seu Nome Completo:</span><br><br>
+                    <span class="t2">Email:</span><br><br>
                     <input class="inputT" type="text" name="nome" id="nome" required>
                 </div>
                 <br><br>
                 <div class="caixinha">
-                    <span class="t2">Seu Email:</span><br><br>
+                    <span class="t2">Senha:</span><br><br>
                     <input class="inputT" type="email" name="email" id="email" required>
                 </div>
                 <br><br>
-                <input class="Button" type="submit" value="Enviar">
+                <div class="buttons">
+                    <input class="Button" type="submit" value="Entrar">
+                    <button class="bc"><a href="./assets/html/cadastro.html">Cadastrar</a></button>
+                </div>
             </form>
         </div>
     </div>
-    
+
     <!-- Arquivo Js -->
     <script src="./assets/js/script.js"></script>
 </body>

@@ -6,13 +6,15 @@
     --cor-azul-claro-minimal: #5affe2;
     --cor-roxo-minimal: #726eff;
     --cor-preta-cinza: #29282c;
+
+    --fonte-roboto: 'Roboto Mono', monospace;;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--fonte-roboto);
 }
 
 body {
@@ -30,19 +32,23 @@ body {
 
 .titulo {
     font-size: 40px;
+    border: 5px solid white;
+    border-radius: 15px;
+    padding: 8px 10px;
 }
 
 .caixa {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
-    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
 }
 
 form{
     width: 550px;
-    height: 450px;
+    height: 900px;
     border-radius: 50px;
     background-color: var(--cor-roxo-minimal);
     display: flex;
@@ -75,11 +81,17 @@ input, span {
     background-color: whitesmoke;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+
+}
+
 .Button{
     border-radius: 10px;
     color: black;
     height: 50px;
-    width: 90px;
+    width: 110px;
     margin: 10px;
     font-size: 15px;
 }
@@ -87,5 +99,5 @@ input, span {
 .Button:hover{
     background-color: var(--cor-azul-pouco-escuro-minimal);
     height: 50px;
-    width: 95px;
+    width: 115px;
 }
